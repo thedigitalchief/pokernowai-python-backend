@@ -106,3 +106,5 @@ python app.py
 ```
 
 The API will be available at `http://localhost:5000/`. 
+
+RenderAPI: https://pokernowai-python-backend.onrender.com
