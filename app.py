@@ -11,7 +11,8 @@ CORS(app, resources={
     r"/**": {"origins": [
         "http://localhost:5173",
         "https://pokernow-ai.vercel.app",
-        "https://pokernowai.com"
+        "https://www.pokernow.ai",
+         "https://pokernow.ai"
     ], "supports_credentials": True}
 })
 
