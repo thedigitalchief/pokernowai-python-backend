@@ -108,4 +108,7 @@ python app.py
 
 The API will be available at `http://localhost:5000/`. 
 
+RENDER API: https://pokernow-ai.onrender.com (production deploy)
+
+
 RenderAPI: https://pokernowai-python-backend.onrender.com
