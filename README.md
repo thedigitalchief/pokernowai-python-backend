@@ -103,6 +103,7 @@ To run the application locally:
 ```bash
 pip install -r requirements.txt
 python app.py
+
 ```
 
 The API will be available at `http://localhost:5000/`. 
