@@ -18,7 +18,7 @@ import numpy as np
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://pokernow.ai, https://pokernowai.vercel.app, https://pokernowai.onrender.com, https://pokernowai-109c2a11b8a2.herokuapp.com"}})
+CORS(app, resources={r"/*": {"origins": "https://pokernow.ai, https://pokernowai.vercel.app, https://pokernow-ai.onrender.com, https://pokernowai-109c2a11b8a2.herokuapp.com"}})
 # from flask_cors import CORS
 # CORS(app, resources={r"/*": {"origins": "https://yourdomain.com"}})
 
