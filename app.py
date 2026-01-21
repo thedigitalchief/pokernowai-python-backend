@@ -4,7 +4,7 @@
 # from flask_cors import CORS
 
 # app = Flask(__name__)
-# CORS(app, resources={r"/*": {"origins": "https://pokernowai.com"}})
+# CORS(app, resources={r"/*": {"origins": "https://pokernow.ai"}})
 
 # @app.route('/job-status/test')
 # def test():
@@ -18,7 +18,9 @@ import numpy as np
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://pokernow.ai, https://pokernowai.vercel.app, https://pokernowai.onrender.com, https://pokernowai-109c2a11b8a2.herokuapp.com"}})
+# from flask_cors import CORS
+# CORS(app, resources={r"/*": {"origins": "https://yourdomain.com"}})
 
 # Directories
 UPLOAD_DIR = os.path.join(os.path.dirname(__file__), 'uploads')
@@ -42,8 +44,8 @@ def analyze_log():
     file = request.files['file']
     filename = secure_filename(file.filename)
 
-    if not filename.endswith('.txt'):
-        return jsonify({'error': 'Only .txt files are allowed'}), 400
+    if not filename.endswith('.csv'): #should it be .csv?
+        return jsonify({'error': 'Only .csv files are allowed'}), 400
 
     filepath = os.path.join(UPLOAD_DIR, filename)
     file.save(filepath)
